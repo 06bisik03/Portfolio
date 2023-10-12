@@ -11,7 +11,7 @@ const Portfolio = () => {
           return (
             <div className={styles.portfolio_project_thumbnail} key={key}>
               <div>
-                <img/>
+                <img alt="x"/>
               </div>
               <div>
               <button><span></span>button</button>

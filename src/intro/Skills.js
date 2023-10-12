@@ -9,52 +9,52 @@ const Skills = () => {
             <ul id="card-list" styles="--count: 5">
               <li>
                 <div className={styles.card}>
-                  <a href="">
+                  <div >
                     <span className={styles.modelName}>Highly Advanced JS Algorithm Knowledge</span>
                     <span>
                     Advanced Complex Data Structures and Algorithms
                     </span>
-                  </a>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={styles.card}>
-                  <a href="">
+                  <div>
                     <span className={styles.modelName}>Highly Advanced ReactJS Knowledge</span>
                     <span>
                         Skillset focused purely on rapid performance and time-complexity
                     </span>
-                  </a>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={styles.card}>
-                  <a href="">
+                  <div>
                     <span className={styles.modelName}>Vast Microsoft Office Knowledge</span>
                     <span>
                         Vast Knowledge of MS Excel, Powerpoint and Access
                     </span>
-                  </a>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={styles.card}>
-                  <a href="">
+                  <div>
                     <span className={styles.modelName}>Highly Advanced NoSQL Knowledge</span>
                     <span>
                         Advanced NoSQL Database Knowledge: MongoDB and Firebase
                     </span>
-                  </a>
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={styles.card}>
-                  <a href="">
+                  <div>
                     <span className={styles.modelName}>Intermediate OOP Programming Knowledge</span>
                     <span>
                         Intermediate OOP Programming Knowledge: C++, C, Java
                     </span>
-                  </a>
+                  </div>
                 </div>
               </li>
               
