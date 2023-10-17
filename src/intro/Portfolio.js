@@ -18,7 +18,7 @@ const Portfolio = () => {
       <div>
         {x.map((item, key) => {
           return (
-            <a target="_blank"href={item.project_link} className={styles.portfolio_project_thumbnail} key={key}>
+            <a target="_blank" rel="noreferrer" href={item.project_link} className={styles.portfolio_project_thumbnail} key={key}>
               <div className={styles.portfolio_thumb_cont}>
                 <img alt="x" src={item.project_img} />
               </div>
