@@ -1,22 +1,28 @@
 import styles from "../App.module.css";
 const Portfolio = () => {
-  const x = [1, 2, 3, 4, 5, 6];
+  const x = [
+    {
+      project_img: "/images/kinfusion.png",
+      project_link: "https://chimerical-sable-61c106.netlify.app",
+    },
+    { project_img: "x", project_link: "x" },
+    { project_img: "x", project_link: "x" },
+    { project_img: "x", project_link: "x" },
+    { project_img: "x", project_link: "x" },
+    { project_img: "x", project_link: "x" },
+  ];
+
   return (
     <div className={styles.portfolio_container}>
-        <div>
-            Website Preview Ideas
-        </div>
+      <div>Website Preview Ideas</div>
       <div>
         {x.map((item, key) => {
           return (
-            <div className={styles.portfolio_project_thumbnail} key={key}>
-              <div>
-                <img alt="x"/>
+            <a target="_blank"href={item.project_link} className={styles.portfolio_project_thumbnail} key={key}>
+              <div className={styles.portfolio_thumb_cont}>
+                <img alt="x" src={item.project_img} />
               </div>
-              <div>
-              <button><span></span>button</button>
-              </div>
-            </div>
+            </a>
           );
         })}
       </div>
