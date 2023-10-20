@@ -5,7 +5,7 @@ const Portfolio = () => {
       project_img: "/images/kinfusion.png",
       project_link: "https://chimerical-sable-61c106.netlify.app",
     },
-    { project_img: "x", project_link: "x" },
+    { project_img: "/images/hiPex.png", project_link: "https://astounding-pika-903876.netlify.app" },
     { project_img: "x", project_link: "x" },
     { project_img: "x", project_link: "x" },
     { project_img: "x", project_link: "x" },
