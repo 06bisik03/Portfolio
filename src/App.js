@@ -1,6 +1,6 @@
 
 
-import { useState,useEffect } from 'react';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import IntroPage from './intro/IntroPage';
 import Mvp from './intro/Mvp';

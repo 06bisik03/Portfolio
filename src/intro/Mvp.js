@@ -12,7 +12,7 @@ const Mvp = () => {
   const slideContent = Array.from({ length: 22 }, (v, i) => (
     <SwiperSlide key={i}>
       <div className={styles.slideContent}>
-        <img src={`/images/opusElite/${i + 1}.png`} />
+        <img alt="x" src={`/images/opusElite/${i + 1}.png`} />
       </div>
     </SwiperSlide>
   ));
@@ -76,13 +76,13 @@ const Mvp = () => {
             </div>
             <div className={styles.logos}>
               <div>
-                <img src="/images/jsLogo.png"/>
+                <img alt="x"src="/images/jsLogo.png"/>
               </div>
-              <div>    <img src="/images/reactLogo.png"/></div>
-              <div>    <img src="/images/nodeLogo.png"/></div>
-              <div>    <img src="/images/expressLogo.png"/></div>
-              <div> <img src="/images/mongoLogo.png"/> </div>
-              <div> <img src="/images/excelLogo.png"/> </div>
+              <div>    <img alt="x" src="/images/reactLogo.png"/></div>
+              <div>    <img alt="x"src="/images/nodeLogo.png"/></div>
+              <div>    <img alt="x"src="/images/expressLogo.png"/></div>
+              <div> <img alt="x"src="/images/mongoLogo.png"/> </div>
+              <div> <img alt="x"src="/images/excelLogo.png"/> </div>
             </div>
           </div>
         </div>
