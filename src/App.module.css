@@ -785,7 +785,7 @@ text-align: center;
 }
 .extra_cont {
   width: 25%;
-  height: 80%;
+  height: 50%;
   display: grid;
   text-decoration: none;
   color: black;
@@ -794,7 +794,7 @@ text-align: center;
   transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
 }
 .extra_cont:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background: linear-gradient(to bottom right, rgb(116, 116, 116), black);
   color:white;
 }
@@ -806,10 +806,10 @@ text-align: center;
   justify-content: center;
 }
 .extra_cont > div:nth-child(2) {
-  width:300px;
-  height:300px;
+  width:60%;
+  height:90%;
   display: flex;
-
+  justify-content: center;
 
   box-sizing: border-box;
   justify-self: center;
@@ -820,6 +820,7 @@ text-align: center;
 .extra_cont > div:nth-child(2) img {
   position: absolute;
   width:100%;
+
   height: 100%;
 }
 .extra_cont:nth-child(3) > div:nth-child(2) img {
