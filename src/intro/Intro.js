@@ -5,11 +5,13 @@ import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import { useEffect, useRef, useState } from "react";
+import Extras from "./Extras";
 
 const Intro = ({ scroller }) => {
     const [explorer, setExplorer] = useState(null)
   const portfolioRef = useRef(null);
   const projectsRef = useRef(null);
+  const extrasRef  = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   useEffect(() => {
@@ -36,7 +38,7 @@ const Intro = ({ scroller }) => {
       case 3:
         scrollToSection(skillsRef);
         break;
-      case 4:
+      case 5:
         scrollToSection(contactRef);
         break;
       default:
@@ -54,6 +56,9 @@ const Intro = ({ scroller }) => {
       </div>
       <div ref={skillsRef} >
         <Skills />
+      </div>
+      <div ref={extrasRef}>
+      <Extras/>
       </div>
       <div ref={contactRef} >
         <Contact />

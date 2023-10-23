@@ -6,10 +6,8 @@ const Portfolio = () => {
       project_link: "https://chimerical-sable-61c106.netlify.app",
     },
     { project_img: "/images/hiPex.png", project_link: "https://astounding-pika-903876.netlify.app" },
-    { project_img: "x", project_link: "x" },
-    { project_img: "x", project_link: "x" },
-    { project_img: "x", project_link: "x" },
-    { project_img: "x", project_link: "x" },
+    { project_img: "/images/flavor.png", project_link: "https://sensational-pixie-1acf57.netlify.app" },
+   
   ];
 
   return (

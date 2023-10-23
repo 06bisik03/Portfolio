@@ -47,7 +47,7 @@ padding:  2% 2.5%;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 40% 30% 25% 50% 30%;
+  grid-template-rows: 26% 20% 17% 32%  17% 20%;
 }
 
 .introduction_container {
@@ -55,6 +55,7 @@ padding:  2% 2.5%;
   height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+
 }
 .introduction_container > div:nth-child(1) {
   width: 100%;
@@ -67,11 +68,12 @@ padding:  2% 2.5%;
 
 }
 .introduction_container > div:nth-child(1) img {
-  height: 65%;
-justify-self: center;
 
+justify-self: center;
+object-fit: contain;
   border-radius: 50%;
-  width: 65%;
+height:70%;
+width:60%
 
 
 }
@@ -142,7 +144,6 @@ justify-self: center;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 3%;
-  grid-template-rows: 45% 45%;
   row-gap: 5%;
   justify-self: center;
   justify-content: center;
@@ -151,7 +152,7 @@ justify-self: center;
 }
 .portfolio_project_thumbnail {
   width: 100%;
-  height: 80%;
+  height: 50%;
 box-sizing: border-box;
 overflow: hidden;
   display: grid;
@@ -162,11 +163,14 @@ overflow: hidden;
 .portfolio_thumb_cont {
   width:100%;
   height:100%;
+  display: grid;
   position: relative;
+  background-color: #363636;
 }
 .portfolio_thumb_cont img {
   width: 100%;
   max-height: 100%;
+  align-self: center;
   position: absolute;
 }
 .portfolio_project_thumbnail > div:nth-child(2) {
@@ -252,11 +256,11 @@ overflow: hidden;
 
 
 .skills_container {
-  width:100%;
-
+ max-width:100%;
+  max-height:100%;
   display: grid;
-  grid-template-rows: 5% 90%;
-  gap:5%;
+  grid-template-rows: 1fr 19fr;
+
 
 }
 .skills_title {
@@ -406,7 +410,7 @@ overflow: hidden;
 	z-index: 1;
 }
 :root {
-	--rotate-speed: 50;
+	--rotate-speed: 20;
 	--count: 5; /* Default count, the DOM element should override this */
 	--easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
 	--easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
@@ -420,11 +424,11 @@ overflow: hidden;
 	animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 .card {
-	width: 29%;
+	width: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 16px 24px;
+	padding: 8px 12px;
 	gap: 8px;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
@@ -432,7 +436,7 @@ overflow: hidden;
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 20px;
 	color: #535062;
 	animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
@@ -443,7 +447,7 @@ overflow: hidden;
 }
 .modelName {
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 150%;
 	color: #3B2ED0;
 	display: block;
@@ -563,6 +567,7 @@ overflow: hidden;
 .contact_container {
   width:100%;
   height:100%;
+
   display: grid;  
   grid-template-rows: 10% 90%;
 
@@ -749,4 +754,65 @@ text-align: center;
     100% {
         box-shadow: inset 0px 0px 0px 30px #4bb71b;
     }
+}
+
+.extras_container {
+  width:100%;
+  height:100%;
+  background-color: red;
+  display: grid;
+  grid-template-rows: 1fr 19fr;
+
+}
+.extras_container_title {
+  width:100%;
+  font-size: 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.extras_details {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.extra_cont {
+  width: 25%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+  background-color: aqua;
+}
+.extra_cont > div:nth-child(1) {
+  width:100%;
+  font-size: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.extra_cont > div:nth-child(2) {
+  width:300px;
+  height:300px;
+  display: flex;
+
+
+  box-sizing: border-box;
+  justify-self: center;
+  overflow: hidden;
+
+  position: relative;
+}
+.extra_cont > div:nth-child(2) img {
+  position: absolute;
+  width:100%;
+  height: 100%;
+}
+
+.extra_cont > div:nth-child(3) {
+  width:100%;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+justify-content: center;
 }

@@ -14,10 +14,7 @@ const Navbar = ({scroller}) => {
           06bisik03@gmail.com
          
         </div>
-        <div className={styles.navbar_content_detail}>
-        <FontAwesomeIcon icon={faUserTie} color="black"/>
-        +40 711511561
-        </div>
+     
         <div className={styles.navbar_content_detail}>
         <FontAwesomeIcon icon={faWhatsapp} color="green"/>
         +90 5510603669
@@ -30,7 +27,9 @@ const Navbar = ({scroller}) => {
           <div onClick={() => scroller(1)}>Portfolio</div>
           <div onClick={() => scroller(2)} >Professions</div>
           <div onClick={() => scroller(3)}>Skills</div>
-          <div onClick={() => scroller(4)}>Contact</div>
+          <div onClick={() => scroller(4)}>Extras</div>
+          <div onClick={() => scroller(5)}>Contact</div>
+         
         </div>
       </div>
     </div>
