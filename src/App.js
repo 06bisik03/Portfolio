@@ -1,16 +1,20 @@
 
-import styles from './App.module.css';
-import Intro from './intro/Intro';
-import Navbar from './UI/Navbar';
-import { useState } from 'react';
-function App() {
-  const [scroller, setScroller ] = useState(0);
-  return (
-    <div className={styles.appContainer}>
-      <Navbar  scroller={setScroller}/>
-        <Intro scroller={scroller}/>
 
-    </div>
+import { useState,useEffect } from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import IntroPage from './intro/IntroPage';
+import Mvp from './intro/Mvp';
+function App() {
+ 
+
+  return (
+    <BrowserRouter>
+    
+      <Routes>
+        <Route index element={<IntroPage />}/>
+        <Route path="/mvp" element={<Mvp />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

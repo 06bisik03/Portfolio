@@ -1,11 +1,12 @@
 import styles from "../App.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
-import { faUserTie,faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 const Navbar = ({scroller}) => {
+
   return (
-    <div className={styles.navbar_container}>
+    <div className={styles.navbar_container} >
       <div className={styles.navbar_content_container}>
         <div className={styles.navbar_content_detail}>
       

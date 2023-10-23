@@ -8,10 +8,10 @@ import { useEffect, useRef, useState } from "react";
 import Extras from "./Extras";
 
 const Intro = ({ scroller }) => {
-    const [explorer, setExplorer] = useState(null)
+  const [explorer, setExplorer] = useState(null);
   const portfolioRef = useRef(null);
   const projectsRef = useRef(null);
-  const extrasRef  = useRef(null);
+  const extrasRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   useEffect(() => {
@@ -20,13 +20,13 @@ const Intro = ({ scroller }) => {
         const element = ref.current;
         const topOffSet = element.getBoundingClientRect().top;
         window.scrollTo({
-            top: window.scrollY + topOffSet - 120,
-            behavior: "smooth",
-        })
+          top: window.scrollY + topOffSet - 120,
+          behavior: "smooth",
+        });
       }
     };
-    if(explorer) {
-        scrollToSection(portfolioRef);
+    if (explorer) {
+      scrollToSection(portfolioRef);
     }
     switch (scroller) {
       case 1:
@@ -38,29 +38,32 @@ const Intro = ({ scroller }) => {
       case 3:
         scrollToSection(skillsRef);
         break;
+      case 4:
+        scrollToSection(extrasRef);
+        break;
       case 5:
         scrollToSection(contactRef);
         break;
       default:
         break;
     }
-  }, [scroller,explorer]);
+  }, [scroller, explorer]);
   return (
     <div className={styles.intro_container}>
-      <Introduction explorer={setExplorer}/>
+      <Introduction explorer={setExplorer} />
       <div ref={portfolioRef}>
         <Portfolio />
       </div>
-      <div  ref={projectsRef} >
-        <Projects/>
+      <div ref={projectsRef}>
+        <Projects />
       </div>
-      <div ref={skillsRef} >
+      <div ref={skillsRef}>
         <Skills />
       </div>
       <div ref={extrasRef}>
-      <Extras/>
+        <Extras />
       </div>
-      <div ref={contactRef} >
+      <div ref={contactRef}>
         <Contact />
       </div>
     </div>
