@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import { useEffect, useRef, useState } from "react";
 import Extras from "./Extras";
+import Functional from "./Functional";
 
 const Intro = ({ scroller }) => {
   const [explorer, setExplorer] = useState(null);
@@ -51,8 +52,14 @@ const Intro = ({ scroller }) => {
   return (
     <div className={styles.intro_container}>
       <Introduction explorer={setExplorer} />
-      <div ref={portfolioRef}>
+      <div ref={portfolioRef} className={styles.intro_container_port}>
+        <div>
         <Portfolio />
+        </div>
+        <div>
+        <Functional/>
+        </div>
+
       </div>
       <div ref={projectsRef}>
         <Projects />
