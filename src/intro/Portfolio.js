@@ -7,7 +7,7 @@ const Portfolio = () => {
     },
     { project_img: "/images/hiPex.png", project_link: "https://astounding-pika-903876.netlify.app" },
     { project_img: "/images/flavor.png", project_link: "https://sensational-pixie-1acf57.netlify.app" },
-   
+    {project_img: "/images/kinosmetics.png", project_link: "https://dapper-tanuki-24b6f6.netlify.app"}
   ];
 
   return (
