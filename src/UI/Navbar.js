@@ -18,7 +18,7 @@ const Navbar = ({scroller}) => {
      
         <div className={styles.navbar_content_detail}>
         <FontAwesomeIcon icon={faWhatsapp} color="green"/>
-        +90 5510603669
+        (+90)5510603669
         </div>
         <div className={styles.navbar_content_detail}>
         <FontAwesomeIcon icon={faMapPin} color="black"/>
