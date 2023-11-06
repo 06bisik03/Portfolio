@@ -38,7 +38,7 @@ background-color: white;
 
 .navbar_elements {
   display: flex;
-  gap: 1vw;
+  gap: 5.5vw;
   z-index: 9999;
 }
 .navbar_elements div {
@@ -51,11 +51,12 @@ background-color: white;
 
 }
 
+
 .intro_container {
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 5%;
+  gap: 2%;
   grid-template-rows: 30% 40% 18% 37%  16% 20%;
 }
 .intro_container_port {
@@ -64,6 +65,19 @@ background-color: white;
   display: grid;
   grid-template-rows: 65% 35%;
 }
+
+@media (max-width: 780px) { 
+  .projects_container {
+    margin-top: -10%;
+  }
+  .intro_container_port {
+    margin-top: -15%;
+  }
+  .intro_container { 
+    gap:10%;
+  }
+}
+
 
 .introduction_container {
   width: 100%;
@@ -209,11 +223,7 @@ overflow: hidden;
 
 .projects_container {
   width:50%;
-
   margin-left: 25%;
-
-
-  
 }
 .projects_title {
   font-size: 3.2vw;
@@ -250,6 +260,7 @@ overflow: hidden;
   left: 10px;
   right: 10px;
   background-size: cover;
+  background-position: center;
   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
   display: flex;
 }
