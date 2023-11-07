@@ -56,12 +56,11 @@ background-color: white;
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 2%;
-  grid-template-rows: 30% 40% 18% 37%  16% 20%;
+  gap: 5%;
+  grid-template-rows: 40% 55% 18% 45%  16% 20%;
 }
 .intro_container_port {
   width:100%;
-
   display: grid;
   grid-template-rows: 65% 35%;
 }
@@ -84,6 +83,7 @@ background-color: white;
   height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+
 
 }
 .introduction_container > div:nth-child(1) {
@@ -222,8 +222,8 @@ overflow: hidden;
 
 
 .projects_container {
-  width:50%;
-  margin-left: 25%;
+  width:100%;
+
 }
 .projects_title {
   font-size: 3.2vw;
@@ -231,16 +231,21 @@ overflow: hidden;
   text-align: center;
 
 }
-
+@media(max-width:600px) {
+  .projects_carousel_container {
+    transform: scale(0.85);
+    color:orange;
+  }
+}
 
 :root {
-  --carousel-width-percent: 50%;
+  --carousel-width-percent: 80%;
 }
 
 .projects_carousel_container {
-  position: relative;
-  width: var(--carousel-width-percent);
 
+  position: relative;
+  width: 320px;
   margin: 50px auto 0 auto;
   perspective: 1000px;
 }
@@ -249,32 +254,28 @@ overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  animation: rotate360 15s infinite forwards linear;
+  transform-style: preserve-3d; 
+  animation: rotate360 30s infinite forwards linear;
 }
 .projects_carousel__face { 
   position: absolute;
-  width: 100%;
-  height: 175px;
+  width: 300px;
+  height: 187px;
   top: 20px;
   left: 10px;
   right: 10px;
   background-size: cover;
-  background-position: center;
   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
   display: flex;
 }
 
-
 .projects_carousel__face span {
   margin: auto;
-  font-size: 1.5vw;
+  font-size: 25px;
   color:white;
 }
 
-:root {
-  --window-width-percent: 100%;
-}
+
 .projects_carousel__face:nth-child(1) {
   background-image: url("/public/images/backend.jpeg");
   transform: rotateY(  0deg) translateZ(200px); }
@@ -287,50 +288,6 @@ overflow: hidden;
 .projects_carousel__face:nth-child(4) {
   background-image: url("/public/images/oop.jpeg");
   transform: rotateY(270deg) translateZ(200px); }
-
-
-@media (max-width: 780px) {
-  :root {
-    --carousel-width-percent: 100%; /* Adjust to your preference */
-  }
- 
-
- 
- 
-
-  .projects_carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-left: 15%;
-    transform-style: preserve-3d; 
-    animation: rotate360 15s infinite forwards linear;
-  }
-  .projects_carousel__face { 
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-    display: flex;
-  }
-  
-  .projects_carousel__face:nth-child(1) {
-    background-image: url("/public/images/backend.jpeg");
-    transform: rotateY(  0deg) translateZ(220px); }
-  .projects_carousel__face:nth-child(2) { 
-    background-image: url("/public/images/frontend.jpeg");
-      transform: rotateY( 90deg) translateZ(220px); }
-  .projects_carousel__face:nth-child(3) {
-    background-image: url("/public/images/fullstack.png");
-    transform: rotateY( 180deg) translateZ(220px); }
-  .projects_carousel__face:nth-child(4) {
-    background-image: url("/public/images/oop.jpeg");
-    transform: rotateY(270deg) translateZ(220px); }
-}
 
 
 
@@ -347,11 +304,11 @@ overflow: hidden;
 
 
 .skills_container {
- max-width:100%;
-  max-height:100%;
+ width:100%;
+  height:100%;
   display: grid;
-  grid-template-rows: 1fr 19fr;
-
+  grid-template-rows: 5% 90%;
+gap:5%;
 
 }
 .skills_title {
@@ -360,14 +317,18 @@ overflow: hidden;
   padding-top: 2%;
 }
 .skills_list {
-  width:65%;
+  width:62%;
   height:100%;
   display: grid;
-  
   column-gap: 2%;
-
   justify-self: center;
   align-self: center;
+}
+.skills_cont{
+  width:100%;
+  height: 100%;
+
+
 }
 
 
@@ -426,6 +387,8 @@ overflow: hidden;
 .void {
 	width: 100%;
 	max-width: 1200px;
+
+
 	margin: auto;
 	position: relative;
 	aspect-ratio: 1 / 1;
@@ -444,7 +407,7 @@ overflow: hidden;
 	z-index: 1;
 }
 :root {
-	--rotate-speed: 25;
+	--rotate-speed: 35;
 	--count: 5; /* Default count, the DOM element should override this */
 	--easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
 	--easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
@@ -458,7 +421,7 @@ overflow: hidden;
 	animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 .card {
-	width: 27%;
+	width: 28%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -505,15 +468,6 @@ overflow: hidden;
 .void li:nth-child(5), .void li:nth-child(5) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
 }
-.void li:nth-child(6), .void li:nth-child(6) .card {
-	animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
-}
-.void li:nth-child(7), .void li:nth-child(7) .card {
-	animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
-}
-.void li:nth-child(8), .void li:nth-child(8) .card {
-	animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
-}
 
 @keyframes rotateCW {
 	from {
@@ -542,7 +496,7 @@ overflow: hidden;
 
 .centerCircle {
 	position: absolute;
-	width: 30%;
+	width: 26%;
 	aspect-ratio: 1 / 1;
 	left: 50%;
 	top: 50%;
@@ -565,7 +519,7 @@ overflow: hidden;
 }
 .lastCircle {
 	position: absolute;
-	width: 66%;
+	width: 60%;
 	aspect-ratio: 1 / 1;
 	left: 50%;
 	top: 50%;
@@ -582,8 +536,10 @@ overflow: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	bottom: 0;
 	width: 50%;
+  max-height: 100%;
 	animation: pulseGlow 5s linear infinite alternate;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;

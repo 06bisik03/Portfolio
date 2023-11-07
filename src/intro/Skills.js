@@ -4,6 +4,7 @@ const Skills = () => {
     <div className={styles.skills_container}>
       <div className={styles.skills_title}>Skills</div>
       <div className={styles.skills_list}>
+        <div className={styles.skills_cont}>
         <div className={styles.void} id="void">
           <div className={styles.crop}>
             <ul id="card-list" styles="--count: 5">
@@ -64,6 +65,7 @@ const Skills = () => {
           </div>
           <div className={styles.mask}></div>
           <div className={styles.centerCircle}></div>
+        </div>
         </div>
       </div>
     </div>
