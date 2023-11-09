@@ -234,10 +234,12 @@
 
 .projects_carousel_container {
   position: relative;
+margin-top: 5%;
 display: grid;
-  width: 70%;
-  height: 80%;
-  transform: translateX(57%);
+  width: 52.5%;
+  height: 60%;
+  transform: translateX(72.5%);
+ 
 
   perspective: 1000px;
 }
@@ -249,6 +251,7 @@ display: grid;
   align-self: flex-end;
   display: grid;
   transform-style: preserve-3d;
+
   animation: rotate360 30s infinite forwards linear;
 }
 .projects_carousel__face {
@@ -268,25 +271,69 @@ text-align: center;
 
 .projects_carousel__face span {
   margin: auto;
-  font-size: 3vw;
+  font-size: 2vw;
   color: white;
 }
 
 .projects_carousel__face:nth-child(1) {
   background-image: url("/public/images/backend.jpeg");
-  transform: rotateY(0deg) translateZ(200px);
+  transform: rotateY(0deg) translateZ(250px);
 }
 .projects_carousel__face:nth-child(2) {
   background-image: url("/public/images/frontend.jpeg");
-  transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(90deg) translateZ(250px);
 }
 .projects_carousel__face:nth-child(3) {
   background-image: url("/public/images/fullstack.png");
-  transform: rotateY(180deg) translateZ(200px);
+  transform: rotateY(180deg) translateZ(250px);
 }
 .projects_carousel__face:nth-child(4) {
   background-image: url("/public/images/oop.jpeg");
-  transform: rotateY(270deg) translateZ(200px);
+  transform: rotateY(270deg) translateZ(250px);
+}
+@media (max-width: 600px) {
+  .projects_carousel__face {
+    font-size: 3vw;
+  }
+  .projects_carousel__face:nth-child(1) {
+    background-image: url("/public/images/backend.jpeg");
+    transform: rotateY(0deg) translateZ(120px);
+  }
+  .projects_carousel__face:nth-child(2) {
+    background-image: url("/public/images/frontend.jpeg");
+    transform: rotateY(90deg) translateZ(120px);
+  }
+  .projects_carousel__face:nth-child(3) {
+    background-image: url("/public/images/fullstack.png");
+    transform: rotateY(180deg) translateZ(120px);
+  }
+  .projects_carousel__face:nth-child(4) {
+    background-image: url("/public/images/oop.jpeg");
+    transform: rotateY(270deg) translateZ(120px);
+  }
+  .projects_carousel_container {
+    position: relative;
+  
+  display: grid;
+    width: 70%;
+    height: 80%;
+    transform: translateX(50%);
+   margin-top: 5%;
+  
+    perspective: 1000px;
+  }
+  .projects_carousel_container {
+    position: relative;
+  
+  display: grid;
+    width: 70%;
+    height: 80%;
+    transform: translateX(50%);
+   
+  
+    perspective: 1000px;
+  }
+  
 }
 
 @keyframes rotate360 {
