@@ -6,6 +6,24 @@
 
   
 }
+@-moz-document url-prefix() {
+  body {
+    height:2500px;
+    width:100vw;
+    overflow-x: hidden
+  };
+  .appContainer {
+    height: 2500px;
+    width:100vw;
+  
+  }
+  
+
+
+  
+  
+  
+}
 .navbar_container {
   width: 100%;
   font-family: 'Poppins', sans-serif;
@@ -114,9 +132,9 @@ width:60%
   align-items: center;
   grid-template-rows: 60% 40%;
   padding-left: 10%;
-
   font-size: 3vw;
 }
+
 .introduction_container > div:nth-child(2) > div:nth-child(1) {
   width: 100%;
   height: 100%;
